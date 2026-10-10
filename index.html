@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Placement Trainer AI</title>
+<meta name="description" content="AI-powered placement preparation platform — ECE Core & Software tracks with MCQ quizzes and aptitude training.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="app">
+    <nav class="navbar" id="navbar"></nav>
+    <main class="page" id="app-view"></main>
+  </div>
+
+  <!-- Data layer (seed content) — never mutated at runtime -->
+  <script src="data/subjects.js"></script>
+  <script src="data/questions-ece.js"></script>
+  <script src="data/questions-software.js"></script>
+  <script src="data/questions-aptitude.js"></script>
+
+  <!-- App layer -->
+  <script src="js/storage.js"></script>
+  <script src="js/quiz.js"></script>
+  <script src="js/admin.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

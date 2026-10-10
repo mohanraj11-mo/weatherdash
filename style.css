@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #1e3c72,
+        #2a5298
+    );
+
+    min-height: 100vh;
+    color: white;
+}
+
+.dashboard {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding-top: 60px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.search-box {
+    margin-bottom: 40px;
+}
+
+.search-box input {
+    width: 300px;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.search-box button {
+    padding: 14px 25px;
+    margin-left: 8px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: white;
+    color: #1e3c72;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background: #eeeeee;
+}
+
+.weather-container {
+    background: rgba(255, 255, 255, 0.15);
+
+    padding: 30px;
+    border-radius: 20px;
+
+    backdrop-filter: blur(10px);
+}
+
+#location {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 200px;
+    padding: 25px;
+
+    background: white;
+    color: #222;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 28px;
+    font-weight: bold;
+}
