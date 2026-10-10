@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather Monitoring Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <h1>🌍 Weather Monitoring Dashboard</h1>
+        <p class="subtitle">Monitor weather conditions around the world</p>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="city"
+                placeholder="Enter city name"
+            >
+
+            <button onclick="getWeather()">
+                Search
+            </button>
+        </div>
+
+        <div class="weather-container">
+
+            <h2 id="location">Search for a city</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>🌡️ Temperature</h3>
+                    <p id="temperature">-- °C</p>
+                </div>
+
+                <div class="card">
+                    <h3>💧 Humidity</h3>
+                    <p id="humidity">-- %</p>
+                </div>
+
+                <div class="card">
+                    <h3>💨 Wind Speed</h3>
+                    <p id="wind">-- km/h</p>
+                </div>
+
+                <div class="card">
+                    <h3>☁️ Weather</h3>
+                    <p id="condition">--</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
